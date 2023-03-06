@@ -1,6 +1,10 @@
 # Prepare
+### Explorer
 - Check explorer ID di https://testnet.osmosis.explorers.guru/
-
+### Faucet
+- https://www.allthatnode.com/faucet/osmosis.dsrv
+### Manual Guide
+- https://docs.osmosis.zone/networks/join-testnet/
 __________________________________
 
 # Auto Install
@@ -24,10 +28,6 @@ osmosisd version
 ```
 
 ##### Kalau Pake Auto Install, setelah kelar, langsung lompat ke bagian add wallet gan
-__________________________________
-
-# Manual Install
-Check di : xxxx
 __________________________________
 # Add Wallet
 
@@ -54,7 +54,7 @@ echo 'export OSMOSIS_VALOPER_ADDRESS='${OSMOSIS_VALOPER_ADDRESS} >> $HOME/.bash_
 source $HOME/.bash_profile
 ```
 ### Faucet 
-Discord : https://discord.gg/2J5jw9se4A
+Discord : xxxx
 
 ### Check Saldo Wallet
 ```
