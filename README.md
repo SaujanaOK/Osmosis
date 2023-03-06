@@ -1,6 +1,6 @@
 # Prepare
 ### Explorer
-- Check explorer ID di https://testnet.osmosis.explorers.guru/
+- https://testnet.osmosis.explorers.guru/
 ### Faucet
 - https://www.allthatnode.com/faucet/osmosis.dsrv
 ### Manual Guide
