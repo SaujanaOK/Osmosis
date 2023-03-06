@@ -1,5 +1,5 @@
 # Prepare
-- Check explorer ID di [https://OSMOSIS.explorers.guru/](https://testnet.osmosis.explorers.guru/)
+- Check explorer ID di https://testnet.osmosis.explorers.guru/
 
 __________________________________
 
