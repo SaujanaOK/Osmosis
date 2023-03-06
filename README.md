@@ -83,10 +83,8 @@ osmosisd tx staking create-validator \
 -y
 ```
 
-### Submit Crew3
-- Check transaksi ID di https://OSMOSIS.explorers.guru/ atau https://explorer-rila.OSMOSIS.io/
-- Kemudian copy linknya dan submit di Crew3 : 
-https://crew3.xyz/c/OSMOSIS/invite/szl85ZQ5Opq8F_Uj3_siu
+### Explorer
+- Check transaksi ID di https://OSMOSIS.explorers.guru/ 
 
 
 ### Jika ingin Edit existing validator
