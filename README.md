@@ -73,7 +73,7 @@ __________________________________
 ### Create Validator
 ```
 osmosisd tx staking create-validator \
---amount 1000000unibi \
+--amount 1000000OSMO \
 --pubkey $(osmosisd tendermint show-validator) \
 --moniker "YOUR_MONIKER_NAME" \
 --identity "YOUR_KEYBASE_ID" \
@@ -87,7 +87,7 @@ osmosisd tx staking create-validator \
 --from wallet \
 --gas-adjustment 1.4 \
 --gas auto \
---gas-prices 0.025unibi \
+--gas-prices 0.025OSMO \
 -y
 ```
 
@@ -101,7 +101,7 @@ osmosisd tx staking edit-validator \
 --chain-id OSMOSIS-itn-1 \
 --from=wallet \
 --gas-adjustment 1.4 \
---gas-prices 0.05unibi
+--gas-prices 0.05OSMO
 ```
 
 __________________________________
@@ -142,7 +142,7 @@ __________________________________
 
 Unjail validator
 ```
-osmosisd tx slashing unjail --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025unibi -y
+osmosisd tx slashing unjail --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025OSMO -y
 ```
 
 Jail reason
@@ -168,47 +168,47 @@ osmosisd q staking validator $(osmosisd keys show wallet --bech val -a)
 💲 Token management
 Withdraw rewards from all validators
 ```
-osmosisd tx distribution withdraw-all-rewards --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.05unibi -y
+osmosisd tx distribution withdraw-all-rewards --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.05OSMO -y
 ```
 
 Withdraw commission and rewards from your validator
 ```
-osmosisd tx distribution withdraw-rewards $(osmosisd keys show wallet --bech val -a) --commission --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025unibi -y
+osmosisd tx distribution withdraw-rewards $(osmosisd keys show wallet --bech val -a) --commission --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025OSMO -y
 ```
 
 Delegate tokens to yourself
 ```
-osmosisd tx staking delegate $(osmosisd keys show wallet --bech val -a) 1000000unibi --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025unibi -y
+osmosisd tx staking delegate $(osmosisd keys show wallet --bech val -a) 1000000OSMO --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025OSMO -y
 ```
 
 Delegate tokens to validator
 ```
-osmosisd tx staking delegate <TO_VALOPER_ADDRESS> 1000000unibi --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025unibi -y
+osmosisd tx staking delegate <TO_VALOPER_ADDRESS> 1000000OSMO --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025OSMO -y
 ```
 
 Redelegate your stake from one validator to another validator
 ```
-osmosisd tx staking redelegate <srcValidatorAddress> <destValidatorAddress> 10000000unibi --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025unibi -y
+osmosisd tx staking redelegate <srcValidatorAddress> <destValidatorAddress> 10000000OSMO --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025OSMO -y
 ```
 
 Redelegate your stake from another validator to yourself
 ```
-osmosisd tx staking redelegate <srcValidatorAddress> $(osmosisd keys show wallet --bech val -a) 1000000unibi --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025unibi -y
+osmosisd tx staking redelegate <srcValidatorAddress> $(osmosisd keys show wallet --bech val -a) 1000000OSMO --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025OSMO -y
 ```
 
 Redelegate your stake from yourself to another validator 
 ```
-osmosisd tx staking redelegate $(osmosisd keys show wallet --bech val -a) <destValidatorAddress> 1000000unibi --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025unibi -y
+osmosisd tx staking redelegate $(osmosisd keys show wallet --bech val -a) <destValidatorAddress> 1000000OSMO --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025OSMO -y
 ```
 
 Unbond tokens from your validator
 ```
-osmosisd tx staking unbond $(osmosisd keys show wallet --bech val -a) 1000000unibi --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025unibi -y
+osmosisd tx staking unbond $(osmosisd keys show wallet --bech val -a) 1000000OSMO --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025OSMO -y
 ```
 
 Send tokens to the wallet
 ```
-osmosisd tx bank send wallet <TO_WALLET_ADDRESS> 1000000unibi --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025unibi -y
+osmosisd tx bank send wallet <TO_WALLET_ADDRESS> 1000000OSMO --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025OSMO -y
 ```
 
 
@@ -225,22 +225,22 @@ osmosisd query gov proposal 1
 
 Vote 'Yes'
 ```
-osmosisd tx gov vote 1 yes --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025unibi -y
+osmosisd tx gov vote 1 yes --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025OSMO -y
 ```
 
 Vote 'No'
 ```
-osmosisd tx gov vote 1 no --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025unibi -y
+osmosisd tx gov vote 1 no --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025OSMO -y
 ```
 
 Vote 'Abstain'
 ```
-osmosisd tx gov vote 1 abstain --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025unibi -y
+osmosisd tx gov vote 1 abstain --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025OSMO -y
 ```
 
 Vote 'NoWithVeto'
 ```
-osmosisd tx gov vote 1 nowithveto --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025unibi -y
+osmosisd tx gov vote 1 nowithveto --from wallet --chain-id OSMOSIS-itn-1 --gas-adjustment 1.4 --gas auto --gas-prices 0.025OSMO -y
 ```
 
 ⚡️ Utility
@@ -300,7 +300,7 @@ curl -sS http://localhost:39657/net_info | jq -r '.result.peers[] | "\(.node_inf
 
 Set minimum gas price
 ```
-sed -i -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0.025unibi\"/" $HOME/.osmosisd/config/app.toml
+sed -i -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0.025OSMO\"/" $HOME/.osmosisd/config/app.toml
 ```
 
 Enable prometheus
