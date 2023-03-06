@@ -1,10 +1,8 @@
 # Prepare
-### Explorer
-- https://testnet.osmosis.explorers.guru/
-### Faucet
-- https://www.allthatnode.com/faucet/osmosis.dsrv
-### Manual Guide
-- https://docs.osmosis.zone/networks/join-testnet/
+- Explorer : https://testnet.osmosis.explorers.guru/
+- Faucet : https://www.allthatnode.com/faucet/osmosis.dsrv
+- Manual Guide : https://docs.osmosis.zone/networks/join-testnet/
+- Hermes : https://docs-nolus-protocol.notion.site/Run-a-Relayer-98f963b5433d454ab64a1673b3eda970
 __________________________________
 
 # Auto Install
