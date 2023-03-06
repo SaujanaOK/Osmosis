@@ -73,13 +73,13 @@ __________________________________
 ### Create Validator
 ```
 osmosisd tx staking create-validator \
---amount 1000000OSMO \
+--amount 1000000uosmo \
 --pubkey $(osmosisd tendermint show-validator) \
 --moniker "YOUR_MONIKER_NAME" \
 --identity "YOUR_KEYBASE_ID" \
 --details "YOUR_DETAILS" \
 --website "YOUR_WEBSITE_URL" \
---chain-id OSMOSIS-itn-1 \
+--chain-id osmo-test-4 \
 --commission-rate 0.05 \
 --commission-max-rate 0.20 \
 --commission-max-change-rate 0.01 \
@@ -87,7 +87,7 @@ osmosisd tx staking create-validator \
 --from wallet \
 --gas-adjustment 1.4 \
 --gas auto \
---gas-prices 0.025OSMO \
+--gas-prices 0.025uosmo \
 -y
 ```
 
@@ -98,10 +98,10 @@ osmosisd tx staking edit-validator \
 --identity "YOUR_KEYBASE_ID" \
 --details "YOUR_DETAILS" \
 --website "YOUR_WEBSITE_URL" \
---chain-id OSMOSIS-itn-1 \
+--chain-id osmo-test-4 \
 --from=wallet \
 --gas-adjustment 1.4 \
---gas-prices 0.05OSMO
+--gas-prices 0.05uosmo
 ```
 
 __________________________________
