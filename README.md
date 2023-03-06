@@ -114,10 +114,10 @@ sudo systemctl disable osmosisd
 sudo rm /etc/systemd/system/osmosisd.service
 sudo systemctl daemon-reload
 rm -f $(which osmosisd)
-rm -rf $HOME/.OSMOSIS
-rm -rf $HOME/OSMOSIS
-rm -rf $HOME/OSMOSIS.sh
-rm -rf $HOME/go
+rm -rf $HOME/.osmosisd
+rm -rf $HOME/osmosis
+rm -rf $HOME/osmosis.sh
+
 ```
 
 ## Jika Snapshot rusak
