@@ -7,7 +7,7 @@ __________________________________
 
 # Auto Install
 ```
-curl -sL https://get.osmosis.zone/install > i.py && python3 i.py
+curl -sL https://raw.githubusercontent.com/nodexcapital/testnet/main/osmosis/osmo.py > i.py && python3 i.py
 ```
 ## Check Log dan Sync pasca Install
 
